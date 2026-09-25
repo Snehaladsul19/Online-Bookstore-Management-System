@@ -1,3 +1,4 @@
+
 package com.bookstore.service;
 
 import com.bookstore.dto.BookRequestDto;
@@ -18,4 +19,7 @@ public interface BookService {
 
     void deleteBook(Long id);
     Page<BookResponseDto> getAllBooks(Pageable pageable); //Pagination
+
+    void deleteAllBooks();
+
 }

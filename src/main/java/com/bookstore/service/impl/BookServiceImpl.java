@@ -121,6 +121,11 @@ public class BookServiceImpl implements BookService {
                 .toList();
     }
 
+    @Override
+    public void deleteAllBooks() {
+        bookRepository.deleteAll();  //for delete all books
+    }
+
         @Override
                 public Page<BookResponseDto> getAllBooks(Pageable pageable){
 
@@ -134,4 +139,5 @@ public class BookServiceImpl implements BookService {
                     book.getQuantity()
             ));
         }
+
 }

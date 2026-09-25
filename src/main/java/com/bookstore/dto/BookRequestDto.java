@@ -16,7 +16,7 @@ import lombok.Setter;
 @AllArgsConstructor
 
 public class BookRequestDto {
-     @NotBlank(message = "title is required")
+     @NotBlank(message = "title is required")   //title nasel trr msg yenar ha
     private String title;
      @NotBlank(message ="author name is required")
     private String author;

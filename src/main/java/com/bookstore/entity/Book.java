@@ -17,5 +17,4 @@ public class Book {
     private String author;
     private Double price;
     private Integer quantity;
-
 }
